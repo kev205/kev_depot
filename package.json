@@ -1,0 +1,21 @@
+{
+  "name": "com.kevin.bixterprise.test",
+  "version": "1.0.0",
+  "description": "test de performance agenda",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "keywords": [
+    "agenda"
+  ],
+  "author": "kevin",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
