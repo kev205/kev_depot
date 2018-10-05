@@ -1,10 +1,11 @@
 /* eslint-disable */
 var http = require('http');
 var mysql = require('mysql');
+
 var server = http.createServer((req, res) => {
     var chaine = '';
     res.writeHead(200, {
-        'Content-Type': 'text/plain'
+        'Content-Type': 'text/html'
     });
     var connection = mysql.createConnection({
         host: "localhost",
@@ -24,7 +25,11 @@ var server = http.createServer((req, res) => {
                 chaine += JSON.stringify(val);
             }
         } else chaine = 'vide';
-        res.end(chaine);
+        if (req.url == '/'){
+            
+        }
+        if (req.url == '/subcribe');
+        res.end();
         connection.end();
     });
 });
