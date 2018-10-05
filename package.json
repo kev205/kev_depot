@@ -14,7 +14,7 @@
     "agenda"
   ],
   "author": "kevin",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "express": "^4.16.3",
