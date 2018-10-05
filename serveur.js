@@ -20,16 +20,6 @@ var db = connector();
 var chaine = '';
 
 app.get('/', (req, res) => {
-    db.query('SELECT * FROM user', (err, data) => {
-        if (err) {
-            console.log(err);
-            return;
-        } else {
-            for (let val of data) {
-                chaine += JSON.stringify(data);
-            }
-        }
-    });
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(path.join(__dirname, 'vues/connexion.html'));
 }).get('*', (req, res) => {
