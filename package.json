@@ -4,7 +4,8 @@
   "description": "test de performance agenda",
   "main": "serveur.js",
   "scripts": {
-    "test": "echo hello"
+    "test": "echo hello",
+    "start": "node serveur.js"
   },
   "repository": {
     "type": "git",

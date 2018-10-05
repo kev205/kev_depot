@@ -5,6 +5,7 @@ var path = require('path');
 var path = require('path');
 var express = require('express');
 var app = express();
+app.use('/node_modules/bootstrap/dist', express.static('node_modules'));
 
 function connector() {
     var connection = mysql.createConnection({
